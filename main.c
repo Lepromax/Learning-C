@@ -2,11 +2,13 @@
 
 int main () {
 
-	int n = 250;
+	// Declaration and define array for a string
+	const int MAXLINE = 1000;
+	int line[MAXLINE];
+	int len; // Length of the current string
+	for (int i = 0; i < MAXLINE; line[i++] = '\0');
 
-	for (int i = 0; i < n; i++) {
-		printf ("%d %% 100 = %d\n", i, i%100);
-	}
+	len = getLine (line, MAXLINE); // Enter the string
 
 	return 0;
 }
