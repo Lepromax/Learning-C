@@ -8,6 +8,7 @@ int main () {
 	int len; // Length of the current string
 	for (int i = 0; i < MAXLINE; line[i++] = '\0');
 
+	printf ("Enter an any string:\n");
 	len = getLine (line, MAXLINE); // Enter the string
 
 	return 0;

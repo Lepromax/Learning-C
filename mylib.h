@@ -569,3 +569,6 @@ unsigned bitCount (unsigned x) {
     return i;
 }
 
+void lower (char line[]) {
+    
+}
