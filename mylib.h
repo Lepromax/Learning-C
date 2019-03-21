@@ -582,7 +582,7 @@ void printChar () {
     char c;
 
     for (int i = 0; i < 127; i++) {
-        printf ("%c%c", i, (i%10 != 9) ? ' ' : '\n');
+        printf ("%c%c", i, (i%10 == 9 && i) ? '\n' : ' ');
     }
     printf ("\n");
 }
