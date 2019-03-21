@@ -12,9 +12,7 @@ int main () {
 
 	lower (line);
 
-	for (int i = 0; i < MAXLINE; i++) {
-		printf ("%s", line);
-	}
+	printf ("%s", line);
 
 	return 0;
 }
