@@ -10,5 +10,11 @@ int main () {
 	printf ("Enter an any string and use \"~\" to finish\n\n");
 	len = getLine (line, MAXLINE);
 
+	lower (line);
+
+	for (int i = 0; i < MAXLINE; i++) {
+		printf ("%s", line);
+	}
+
 	return 0;
 }
