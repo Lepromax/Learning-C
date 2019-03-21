@@ -2,14 +2,13 @@
 
 int main () {
 
-	// Declaration and define array for a string
 	const int MAXLINE = 1000;
-	char line[MAXLINE];
+	char line[MAXLINE]; // Array for a string
 	int len; // Length of the current string
 	for (int i = 0; i < MAXLINE; line[i++] = '\0');
 
 	printf ("Enter an any string and use \"~\" to finish\n\n");
-	len = getLine (line, MAXLINE); // Enter the string
+	len = getLine (line, MAXLINE);
 
 	return 0;
 }
