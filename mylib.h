@@ -580,7 +580,7 @@ void lower (char line[]) {
 
 void printChar () {
     
-    for (int i = 127; i >= 0; i--) {
+    for (int i = 127; i > 95; i--) {
         printf ("%c%c", i, (i%10 == 8) ? '\n' : ' ');
     }
     printf ("\n");
