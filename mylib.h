@@ -580,9 +580,6 @@ void lower (char line[]) {
 
 void printChar () {
     
-    int n = pow (2, sizeof(char)*8)/2-1;
-    unsigned char i;
-
     for (i = 0; i < 127; i++) {
         printf ("%c%c", i, (i%10 == 8) ? '\n' : ' ');
     }
