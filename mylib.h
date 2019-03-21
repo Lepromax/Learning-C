@@ -579,9 +579,8 @@ void lower (char line[]) {
 }
 
 void printChar () {
-    char c;
-
-    for (int i=10000; i < 127; i++) {
+    
+    for (char i = 1; i < 127; i++) {
         printf ("%c%c", i, (i%10 == 9) ? '\n' : ' ');
     }
     printf ("\n");
