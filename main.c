@@ -2,6 +2,7 @@
 
 int main () {
 
+	/*
 	const int MAXLINE = 1000;
 	char line[MAXLINE]; // Array for a string
 	int len; // Length of the current string
@@ -13,6 +14,9 @@ int main () {
 	lower (line);
 
 	printf ("%s", line);
+	*/
+
+	printChar ();
 
 	return 0;
 }
