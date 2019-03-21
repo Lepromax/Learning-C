@@ -581,7 +581,7 @@ void lower (char line[]) {
 void printChar () {
     char c;
 
-    for (int i = 0; i < pow(2, sizeof(char))-1; i++) {
-        (i%10 == 9) ? printf ("\n%c", i) : printf ("%c", i);
+    for (int i = 0; i < 255; i++) {
+        printf ("%c", i);
     }
 }
