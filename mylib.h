@@ -570,5 +570,10 @@ unsigned bitCount (unsigned x) {
 }
 
 void lower (char line[]) {
-    
+    int cChar;
+
+    for (int i = 0; (cChar = line[i]) != '\0'; i++) {
+        line[i] = (cChar >= 'A' && cChar <= 'Z') ? cChar - ('A' - 'a') : cChar;
+    }
+
 }
