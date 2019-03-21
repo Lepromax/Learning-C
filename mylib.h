@@ -584,5 +584,4 @@ void printChar () {
         printf ("%c%c", i, (i%10 == 8) ? '\n' : ' ');
     }
     printf ("\n");
-    n = '0';
 }
