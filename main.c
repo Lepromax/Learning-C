@@ -10,8 +10,8 @@ int main () {
 
 	}
 	for (i = 0; i < 100; i++) {
-		printf ("%d - %d%c", i, arr[i], (i%5) ? ' ' : '\n');
-		
+		printf ("%d - %d%c", i, arr[i], (i%5) ? ' | ' : '\n');
+
 	}
 	printf ("\n");
 
