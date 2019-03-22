@@ -2,17 +2,18 @@
 
 int main () {
 
-	const int MAXLINE = 1000;
-	char line[MAXLINE]; // Array for a string
-	int len; // Length of the current string
-	for (int i = 0; i < MAXLINE; line[i++] = '\0');
+	int arr[100];
+	int i;
 
-	printf ("Enter an any string and use \"~\" to finish\n\n");
-	len = getLine (line, MAXLINE);
+	for (i = 0; i < 100; i++) {
+		arr[i] = i * i;
+	}
 
-	lower (line);
+	for (i = 0; i < 100; i++) {
+		printf ("%d - %d%c", i, arr[i], (i%5) ? ' ' : '\n');
+	}
 
-	printf ("%s", line);
+
 
 	return 0;
 }

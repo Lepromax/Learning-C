@@ -585,3 +585,24 @@ void printChar () {
     }
     printf ("\n");
 }
+
+int binSearch (int x, int v[], int n) {
+    int low, high, mid;
+
+    while (low <= high) {
+        mid = (low + high) / 2;
+
+        if (x < v[mid]) {
+            high = mid - 1;
+
+        } else if (x > v[mid]) {
+            low = mid + 1;
+
+        } else {
+            return mid; // x found
+
+        }
+
+    }
+    return -1; // x not found
+}
