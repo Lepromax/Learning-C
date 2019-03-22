@@ -592,19 +592,25 @@ int binSearch (int x, int v[], int n) {
     low = 0;
     high = n - 1;
     
-    while (low <= high) {
-        mid = (low + high) / 2;
+    mid = (low + high) / 2;
 
+    while (low <= high && x != v[mid]) {
         if (x < v[mid]) {
             high = mid - 1;
 
-        } else if (x > v[mid]) {
+        } else {
             low = mid + 1;
 
-        } else {
-            return mid; // x found
-
         }
+        mid = (low + high) / 2;
     }
-    return -1; // x not found
+
+    if (x == v[mid]) {
+        return mid;
+        
+    } else {
+        return -1;
+
+    }
+
 }
