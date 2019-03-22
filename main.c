@@ -5,7 +5,7 @@ int main () {
 	int arr[SIZE];
 	int i, x, index;
 
-	x = 3844
+	x = 3844;
 
 	for (i = 0; i < SIZE; i++) {
 		arr[i] = i * i;
