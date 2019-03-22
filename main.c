@@ -10,7 +10,7 @@ int main () {
 
 	}
 	for (i = 0; i < 100; i++) {
-		printf ("%4d - %4d%c", i, arr[i], (i%5) ? ' | ' : '\n');
+		printf ("%4d - %4d%c", i, arr[i], (i%5 == 4) ? ' | ' : '\n');
 
 	}
 	printf ("\n");
