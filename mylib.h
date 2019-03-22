@@ -605,7 +605,6 @@ int binSearch (int x, int v[], int n) {
             return mid; // x found
 
         }
-
     }
     return -1; // x not found
 }
