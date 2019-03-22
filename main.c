@@ -5,6 +5,8 @@ int main () {
 	int arr[SIZE];
 	int i, x, index;
 
+	x = 3844;
+
 	for (i = 0; i < SIZE; i++) {
 		arr[i] = i * i;
 
@@ -15,7 +17,6 @@ int main () {
 	}
 	printf ("\n");
 
-	x = 3844;
 	index = binSearch (x, arr, SIZE);
 
 	printf ("%3d - %4d\n", index, x);
