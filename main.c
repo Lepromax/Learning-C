@@ -1,19 +1,24 @@
 #include "mylib.h"
 
 int main () {
+	const int SIZE = 100;
+	int arr[SIZE];
+	int i, x, index;
 
-	int arr[100];
-	int i;
-
-	for (i = 0; i < 100; i++) {
+	for (i = 0; i < SIZE; i++) {
 		arr[i] = i * i;
 
 	}
-	for (i = 0; i < 100; i++) {
+	for (i = 0; i < SIZE; i++) {
 		printf ("%3d - %4d %c", i, arr[i], ((i+1)%5) ? '|' : '\n');
 
 	}
 	printf ("\n");
+
+	x = 1681;
+	index = binSearch(x, arr, SIZE);
+
+	printf ("%3d - %4d\n", index, x);
 
 	return 0;
 }
