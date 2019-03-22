@@ -591,7 +591,7 @@ int binSearch (int x, int v[], int n) {
 
     low = 0;
     high = n - 1;
-
+    
     while (low <= high) {
         mid = (low + high) / 2;
 
