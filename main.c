@@ -15,7 +15,7 @@ int main () {
 	}
 	printf ("\n");
 
-	x = 1681;
+	x = 3844;
 	index = binSearch(x, arr, SIZE);
 
 	printf ("%3d - %4d\n", index, x);
