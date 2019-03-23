@@ -619,7 +619,7 @@ void escape (char to[], char from[]) {
     int i, j;
     int cChar;
 
-    for (i = 0; (cChar = from[i]) != '\0'; i++) {
+    for (i = 0, j = 0; (cChar = from[i]) != '\0'; i++) {
         to[j++] = cChar;
 
     }
