@@ -625,9 +625,11 @@ void escape (char to[], char from[]) {
             case '\n':
                 to[j++] = '\\';
                 to[j++] = 'n';
+                break;
             case '\t':
                 to[j++] = '\\';
                 to[j++] = 't';
+                break;
             default:
                 to[j++] = cChar;
         }
