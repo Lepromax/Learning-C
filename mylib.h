@@ -607,10 +607,20 @@ int binSearch (int x, int v[], int n) {
 
     if (x == v[mid]) {
         return mid;
-        
+
     } else {
         return -1;
 
     }
 
+}
+
+void escape (int to[], int from[]) {
+    int i, j;
+    int cChar;
+
+    for (i = 0; (cChar = from[i]) != '\0'; i++) {
+        to[j++] = cChar;
+        
+    }
 }
