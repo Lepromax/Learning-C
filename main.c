@@ -10,7 +10,7 @@ int main () {
 
 	//escape (changed, original); // Copy original to change
 
-	printf ("%s\n", changed);
+	printf ("%s\n", original);
 
 	return 0;
 }
