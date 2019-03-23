@@ -8,9 +8,9 @@ int main () {
 	
 	getLine (original, MAXLINE); // Enter a string
 
-	//escape (changed, original); // Copy original to change
+	escape (changed, original); // Copy original to change
 
-	printf ("%s\n", original);
+	printf ("%s\n", changed);
 
 	return 0;
 }
