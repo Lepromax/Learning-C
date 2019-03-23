@@ -615,12 +615,12 @@ int binSearch (int x, int v[], int n) {
 
 }
 
-void escape (int to[], int from[]) {
+void escape (char to[], char from[]) {
     int i, j;
     int cChar;
 
     for (i = 0; (cChar = from[i]) != '\0'; i++) {
         to[j++] = cChar;
-        
+
     }
 }
