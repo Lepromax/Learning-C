@@ -5,6 +5,15 @@ int main () {
 	const int MAXLINE = 1000;
 	char original[MAXLINE],
 		 changed[(int)1.5 * MAXLINE];
+
+	for (int i = 0; i < MAXLINE; i++) {
+		original[i] = '\0';
+
+	}
+	for (int i = 0; i < (int)1.5*MAXLINE; i++) {
+		changed[i] = '\0';
+		
+	}
 	
 	getLine (original, MAXLINE); // Enter a string
 
