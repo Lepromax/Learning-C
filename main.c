@@ -9,7 +9,7 @@ int main () {
 	
 	getLine (original, MAXLINE); // Enter a string
 
-	escape (changed, original); // Copy original to change
+	reEscape (changed, original); // Copy original to change
 
 	printf ("%s\n", changed);
 

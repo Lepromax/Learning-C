@@ -636,3 +636,26 @@ void escape (char to[], char from[]) {
 
     }
 }
+
+void reEscape (char to[], char from[]) {
+    int i, j;
+    int cChar;
+
+    for (i = 0, j = 0; (cChar = from[i]) != '\0'; i++) {
+        
+        if (cChar == '\\') {
+            if (from[i+1] == 'n') {
+                to[j++] = '\n';
+                i++;
+
+            }
+            if (from[i+1] == 't') {
+                to[j++] = '\t';
+                i++;
+
+            }
+        } else {
+            to[j++] = cChar;
+        }
+    }
+}
