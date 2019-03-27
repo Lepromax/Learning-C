@@ -2,6 +2,7 @@
 
 int main () {
 	
+	printf ("Merge conflict!");
 
 	return 0;
 }
