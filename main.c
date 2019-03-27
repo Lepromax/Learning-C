@@ -2,7 +2,7 @@
 
 int main () {
 	
-	printf ("Merge conflict!");
+	printf ("Hello world!");
 
 	return 0;
 }
