@@ -2,7 +2,7 @@
 
 int main () {
 	
-	printf ("Merge conflict!");
+	printf ("Fuck you!");
 
 	return 0;
 }
