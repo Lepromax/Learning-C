@@ -659,3 +659,7 @@ void reEscape (char to[], char from[]) {
         }
     }
 }
+
+void expand (char s1[], char s2[]) {
+    
+}
